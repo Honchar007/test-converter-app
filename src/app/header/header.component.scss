@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: black;
+      color: white;
+    }
+  }
+
+  .nav-date {
+    border: 0;
+  }
+}

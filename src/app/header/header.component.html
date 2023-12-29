@@ -1,5 +1,8 @@
-<nav *ngIf="exchange && exchange.length > 0" class="nav">
-  <div *ngFor="let item of eurDol; index as i;" class="nav-item">
-    {{item.rate}}
+<nav *ngIf="mainRates" class="nav">
+  <div *ngFor="let item of mainRates.exchange; index as i;" class="nav-item">
+    1 {{item.name}} = {{item.rate}} UAH
+  </div>
+  <div class="nav-item nav-date">
+    Курс валют актуальний на {{mainRates.time}}
   </div>
 </nav>
