@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { CurrencyComponent } from './currency/currency.component';
+import { ConverterComponent } from './converter/converter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CurrencyComponent,
+    ConverterComponent
   ],
   imports: [
     BrowserModule,
