@@ -1,6 +1,6 @@
 interface Currency {
   "name": String,
-  "rate": Number,
+  "rate": String,
 }
 
 export default Currency;

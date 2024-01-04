@@ -1,1 +1,8 @@
-<p>converter works!</p>
+<div class="currency-change">
+  <app-currency [currencies]="currencies" [amount]="amountFrom" [selectedCurrency]="selectedCurrencyFrom"
+              (amountChange)="onAmountFromChange($event)" (currencyChange)="onCurrencyFromChange($event)">
+  </app-currency>
+  <app-currency [currencies]="currencies" [amount]="amountTo" [selectedCurrency]="selectedCurrencyTo"
+                (amountChange)="onAmountToChange($event)" (currencyChange)="onCurrencyToChange($event)">
+  </app-currency>
+</div>

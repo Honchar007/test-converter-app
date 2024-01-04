@@ -1,19 +1,6 @@
 
-<app-header [mainRates]="eurDol" ></app-header>
+<app-header></app-header>
 <main class="main">
-  <div class="currency-change">
-    <div class="currency">
-      <input type="number" [ngModel]="amountFrom" (ngModelChange)="onAmountFromChange($event)">
-      <select [ngModel]="selectedCurrencyFrom" (ngModelChange)="onCurrencyFromChange($event)">
-        <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
-      </select>
-    </div>
-    <div class="currency">
-      <input type="number" [ngModel]="amountTo" (ngModelChange)="onAmountToChange($event)">
-      <select [ngModel]="selectedCurrencyTo" (ngModelChange)="onCurrencyToChange($event)">
-        <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
-      </select>
-    </div>
-  </div>
+  <app-converter></app-converter>
 </main>
 <router-outlet></router-outlet>
